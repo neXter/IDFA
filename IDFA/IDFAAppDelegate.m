@@ -24,7 +24,7 @@
         NSString *path = [[NSBundle mainBundle] pathForResource:@"settings" ofType:@"plist"];
         NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
     
-        [Flurry setDebugLogEnabled:YES];
+        //[Flurry setDebugLogEnabled:YES];
         [Flurry startSession:[settings objectForKey:@"FLURRY_API_KEY"]];
     #endif
     return YES;

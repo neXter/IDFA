@@ -12,32 +12,31 @@
 @implementation DeviceIdentifiers
 
 +(NSString *)IDFA {
-    NSString *OSVersion = [[UIDevice currentDevice] systemVersion];
-    NSString *neededOSVersion = @"6.0";
-    
-    NSComparisonResult result = [neededOSVersion compare:OSVersion];
-    
-    if (result == NSOrderedAscending) {
-        NSLog(@"iOS version too low, >= iOS 6.0 needed");
-        return @"iOS 6.0+ needed";
-    } else {
+    if (self.supportsIDFA) {
         return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    } else {
+        return @"iOS 6.0+ needed";
     }
 }
 
 +(BOOL)IDFAPrivacyCheck {
-    NSString *OSVersion = [[UIDevice currentDevice] systemVersion];
-    NSString *neededOSVersion = @"6.0";
-    
-    NSComparisonResult result = [neededOSVersion compare:OSVersion];
-
-    // iOS >= 6.0 needed
-    if (result == NSOrderedAscending) {
-        return NO;
-    } else {
+    if (self.supportsIDFA) {
         return [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
+    } else {
+        return NO;
     }
 }
 
++(BOOL)supportsIDFA {
+    NSString *OSVersion = [[UIDevice currentDevice] systemVersion];
+    NSString *neededOSVersion = @"6.0";
+    
+    if ([OSVersion compare:neededOSVersion options:NSNumericSearch] != NSOrderedAscending) {
+        return YES;
+    } else {
+        NSLog(@"iOS version too low, >= iOS 6.0 needed");
+        return NO;
+    }
+}
 
 @end
