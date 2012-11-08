@@ -12,5 +12,6 @@
 
 +(NSString *)IDFA ;
 +(BOOL)IDFAPrivacyCheck;
++(BOOL)supportsIDFA;
 
 @end
