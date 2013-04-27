@@ -10,8 +10,6 @@
 #import "DeviceIdentifiers.h"
 #import "IDFAAppDelegate.h"
 
-#import "Flurry.h"
-
 @implementation IDFAViewController
 
 @synthesize IDFACell, IDFAPrivacyCheckCell, sendMailButton, infoText;
@@ -72,20 +70,6 @@
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    switch (result)
-    {
-        case MFMailComposeResultSent:
-            [Flurry logEvent:@"MAIL_SEND"];
-            break;
-        case MFMailComposeResultSaved:
-            [Flurry logEvent:@"MAIL_SAVED"];
-            break;
-        case MFMailComposeResultCancelled:
-            [Flurry logEvent:@"MAIL_CANCELLED"];
-        case MFMailComposeResultFailed:
-        default:
-            break;
-    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

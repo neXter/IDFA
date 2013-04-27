@@ -8,8 +8,6 @@
 
 #import "AboutViewController.h"
 
-#import "Flurry.h"
-
 @implementation AboutViewController
 
 @synthesize aboutText;
@@ -21,8 +19,6 @@
     [aboutText loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle]
                                                                                 pathForResource:@"about"
                                                                                 ofType:@"html"] isDirectory:NO]]];
-    [Flurry logEvent:@"VIEW_ABOUT"];
-
 }
 
 @end

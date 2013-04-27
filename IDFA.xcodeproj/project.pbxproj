@@ -23,14 +23,12 @@
 		7541C32A161C583A0068D0C0 /* DeviceIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7541C329161C583A0068D0C0 /* DeviceIdentifiers.m */; };
 		7541C32B161C5BF20068D0C0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7541C326161C56BB0068D0C0 /* AdSupport.framework */; };
 		7541C32E161C66F30068D0C0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7541C32C161C60590068D0C0 /* MessageUI.framework */; };
-		75BDA0AA161CC4DB00B266E9 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BDA0A9161CC4DB00B266E9 /* libFlurry.a */; };
 		75BDA0AD161CC50200B266E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BDA0AC161CC50200B266E9 /* SystemConfiguration.framework */; };
 		75BDA0B0161CD4FB00B266E9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BDA0AF161CD4FB00B266E9 /* AboutViewController.m */; };
 		75BDA0B5161CD82700B266E9 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 75BDA0B4161CD82700B266E9 /* about.html */; };
 		75BDA0B7161CD88700B266E9 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 75BDA0B6161CD88700B266E9 /* info.html */; };
 		75BDA0C2161CF3E500B266E9 /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BDA0C0161CF3E500B266E9 /* icon_info.png */; };
 		75BDA0C3161CF3E500B266E9 /* icon_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75BDA0C1161CF3E500B266E9 /* icon_info@2x.png */; };
-		75FB7615164B003200EBC7AE /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75FB7614164B003200EBC7AE /* settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +54,6 @@
 		7541C328161C583A0068D0C0 /* DeviceIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceIdentifiers.h; sourceTree = "<group>"; };
 		7541C329161C583A0068D0C0 /* DeviceIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceIdentifiers.m; sourceTree = "<group>"; };
 		7541C32C161C60590068D0C0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		75BDA0A8161CC4DB00B266E9 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		75BDA0A9161CC4DB00B266E9 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		75BDA0AC161CC50200B266E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		75BDA0AE161CD4FB00B266E9 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		75BDA0AF161CD4FB00B266E9 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
@@ -65,7 +61,6 @@
 		75BDA0B6161CD88700B266E9 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
 		75BDA0C0161CF3E500B266E9 /* icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info.png; sourceTree = "<group>"; };
 		75BDA0C1161CF3E500B266E9 /* icon_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_info@2x.png"; sourceTree = "<group>"; };
-		75FB7614164B003200EBC7AE /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +74,6 @@
 				7541C304161C515E0068D0C0 /* UIKit.framework in Frameworks */,
 				7541C306161C515E0068D0C0 /* Foundation.framework in Frameworks */,
 				7541C308161C515E0068D0C0 /* CoreGraphics.framework in Frameworks */,
-				75BDA0AA161CC4DB00B266E9 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +118,6 @@
 		7541C309161C515E0068D0C0 /* IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				75FB7614164B003200EBC7AE /* settings.plist */,
 				7541C312161C515E0068D0C0 /* IDFAAppDelegate.h */,
 				7541C313161C515E0068D0C0 /* IDFAAppDelegate.m */,
 				7541C31B161C515E0068D0C0 /* MainStoryboard.storyboard */,
@@ -137,7 +130,6 @@
 				75BDA0BB161CF04B00B266E9 /* HTML */,
 				75BDA0BA161CF04400B266E9 /* Icons */,
 				7541C30A161C515E0068D0C0 /* Supporting Files */,
-				75BDA0A7161CC4DB00B266E9 /* Flurry */,
 			);
 			path = IDFA;
 			sourceTree = "<group>";
@@ -151,15 +143,6 @@
 				7541C311161C515E0068D0C0 /* IDFA-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		75BDA0A7161CC4DB00B266E9 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				75BDA0A8161CC4DB00B266E9 /* Flurry.h */,
-				75BDA0A9161CC4DB00B266E9 /* libFlurry.a */,
-			);
-			path = Flurry;
 			sourceTree = "<group>";
 		};
 		75BDA0BA161CF04400B266E9 /* Icons */ = {
@@ -243,7 +226,6 @@
 				7540BFB9161D8CA200B66774 /* Default.png in Resources */,
 				7540BFBB161D8CA600B66774 /* Default@2x.png in Resources */,
 				7540BFBD161D8CAA00B66774 /* Default-568h@2x.png in Resources */,
-				75FB7615164B003200EBC7AE /* settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +323,6 @@
 				GCC_PREFIX_HEADER = "IDFA/IDFA-Prefix.pch";
 				INFOPLIST_FILE = "IDFA/IDFA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/IDFA/Flurry\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -361,10 +339,6 @@
 				GCC_PREFIX_HEADER = "IDFA/IDFA-Prefix.pch";
 				INFOPLIST_FILE = "IDFA/IDFA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/IDFA/Flurry\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
