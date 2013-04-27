@@ -15,7 +15,7 @@
     if (self.supportsIDFA) {
         return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
     } else {
-        return @"iOS 6.0+ needed";
+        return @"Not available, iOS 6.0+ needed";
     }
 }
 
