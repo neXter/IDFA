@@ -28,13 +28,9 @@
 }
 
 +(BOOL)supportsIDFA {
-    NSString *OSVersion = [[UIDevice currentDevice] systemVersion];
-    NSString *neededOSVersion = @"6.0";
-    
-    if ([OSVersion compare:neededOSVersion options:NSNumericSearch] != NSOrderedAscending) {
+    if(NSClassFromString(@"ASIdentifierManager")) {
         return YES;
     } else {
-        NSLog(@"iOS version too low, >= iOS 6.0 needed");
         return NO;
     }
 }
