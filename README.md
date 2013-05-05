@@ -19,4 +19,4 @@ Licensed under MIT. (see LICENCE)
 Pieter Walsweer
 
 * Website: [pieter.cc](http://pieter.cc)
-* Twitter: @neXter
+* Twitter: [@neXter](http://twitter.com/neXter)
