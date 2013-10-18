@@ -192,6 +192,11 @@
 				CLASSPREFIX = IDFA;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = pwalsweer;
+				TargetAttributes = {
+					7541C2FE161C515E0068D0C0 = {
+						DevelopmentTeam = 2M7LQCNAV4;
+					};
+				};
 			};
 			buildConfigurationList = 7541C2F9161C515E0068D0C0 /* Build configuration list for PBXProject "IDFA" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -319,10 +324,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDFA/IDFA-Prefix.pch";
 				INFOPLIST_FILE = "IDFA/IDFA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -333,12 +339,12 @@
 		7541C325161C515E0068D0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDFA/IDFA-Prefix.pch";
 				INFOPLIST_FILE = "IDFA/IDFA-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
